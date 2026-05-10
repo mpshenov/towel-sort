@@ -1,4 +1,7 @@
 module.exports = function towelSort(matrix) {
+  if (!matrix || matrix.length === 0) {
+    return [];
+  }
   const result = [];
   for (let i = 0; i < matrix.length; i += 1) {
     const row = matrix[i];
